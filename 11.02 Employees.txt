@@ -1,0 +1,3 @@
+Susan, Meyers, 47899, 15.64
+Mark, Jones, 39119, 14.46
+Joy, Rogers, 41774, 15.28

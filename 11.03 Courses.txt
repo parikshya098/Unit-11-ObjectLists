@@ -1,0 +1,26 @@
+IFSC,1110,Introduction to Ethics, EIT 211, M-W 9:00-10:50
+IFSC,1202,Introduction to Object-oriented Technology, EIT 212, M-W 11:00-12:00
+IFSC,1310,Web Technologies, EIT 213, M-W 12:00-1:00
+IFSC,2200,Ethics in the Profession, EIT 214, M-W 1:00-2:00
+IFSC,2300,Object-oriented Technology, EIT 211, M-W 3:00-4:00
+IFSC,2305,Computer Systems, EIT 212, T-T 9:00-10:50
+IFSC,2315,Information Systems Software, EIT 213, T-T 11:00-12:00
+IFSC,2340,Human Computer Interface, EIT 214, T-T 12:00-1:00
+IFSC,3300,Web Client Applications, EIT 211, T-T 1:00-2:00
+IFSC,3315,Applied Networking, EIT 212, T-T 2:00-3:00
+IFSC,3320,Database Concepts, EIT 213, T-T 3:00-4:00
+IFSC,3330,Current Trends in Database Technology, EIT 214, M-W 9:00-10:50
+IFSC,3342,Mobile Web Development, EIT 211, M-W 11:00-12:00
+IFSC,3360,System Analysis and Design, EIT 212, M-W 12:00-1:00
+IFSC,4300,Independent Study, EIT 213, M-W 1:00-2:00
+IFSC,4301,Information, Computing, and the Future, EIT 214, M-W 2:00-3:00
+IFSC,4325,Data Mining Concepts and Techniques, EIT 211, M-W 3:00-4:00
+IFSC,4330,Database Security, EIT 212, T-T 9:00-10:50
+IFSC,4339,Network Security,  EIT 213, T-T 11:00-12:00
+IFSC,4345,Information Visualization,  EIT 214, T-T 12:00-1:00
+IFSC,4350,Electronic Commerce, EIT 211, T-T 1:00-2:00
+IFSC,4360,Social Computing, EIT 212, T-T 2:00-3:00
+IFSC,4365,Web Server Applications, EIT 213, T-T 3:00-4:00
+IFSC,4376,Applied Cryptography, EIT 214, M-W 9:00-10:50
+IFSC,4396,Capstone Project I, EIT 211, M-W 11:00-12:00
+IFSC,4398,Capstone Project II, EIT 212, M-W 12:00-1:00

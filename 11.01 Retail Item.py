@@ -29,5 +29,4 @@ print("{:>20s}{:>20s}{:>20s}{:>20s}".format("Description","Units On Hand","Price
 for i in range(len(updatedlist)):
     print("{:>20s}{:>20d}{:>20.2f}{:>20.2f}".format(inventorylist[i].Description,inventorylist[i].UnitOnHand,updatedlist[i].Price,updatedlist[i].InventoryValue()))
 
-updatedlist[find_inventory(updatedlist,"Inventory Value")]
-print_updatedlist(updatedlist)
+print()

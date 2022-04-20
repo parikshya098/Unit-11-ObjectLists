@@ -1,5 +1,4 @@
-from prettytable import PrettyTable
-
+from prettytable import PrettyTable\
 
 class Course:
     def __init__(self, department="", number="", name="", room="", meetingtimes=""):
@@ -9,36 +8,28 @@ class Course:
         self.room = room
         self.meetingtimes = meetingtimes
 
-
-# Course List Class
 class CourseList:
     def __init__(self, courseList=None):
         if courseList is None:
             courseList = []
         self.courseList = courseList
-
     def add_course(self, department, number, name, room, meetingtimes):
         temp = Course(department, number, name, room, meetingtimes)
         self.courseList.append(temp)
-
     def find_course(self, departmenttofind, numbertofind):
         for c in range(len(self.courseList)):
             if self.courseList[c].department == departmenttofind and self.courseList[c].number == numbertofind:
                 return c
-
     def add_course_from_file(self, filename):
         file = open(filename, "r")
         for x in file:
             courseInformation = x.split(",")
             self.add_course(courseInformation[0], courseInformation[1], courseInformation[2], courseInformation[3],
                             courseInformation[4].strip())
-
     def print_course_list(self):
         for tempCoursee in self.courseList:
             print(tempCoursee)
 
-
-# Student Class
 class Student:
     def __init__(self, firstname="", lastname="", tnumber=""):
         self.enrolledCourses = []
@@ -46,8 +37,6 @@ class Student:
         self.lastname = lastname
         self.tnumber = tnumber
 
-
-# Student List Class
 class StudentList:
     def __init__(self, studentList=None):
         if studentList is None:
@@ -57,12 +46,10 @@ class StudentList:
     def add_student(self, firstName, lastName, tnumber):
         temp = Student(firstName, lastName, tnumber)
         self.studentList.append(temp)
-
     def find_student(self, studenttofind):
         for studentIndex in range(len(self.studentList)):
             if self.studentList[studentIndex].tnumber == studenttofind:
                 return studentIndex
-
     def print_student_list(self):
         t = PrettyTable(['First Name', 'Last Name', 'T-Number', 'Course', '', 'Name', ' Room', 'Meeting Times'])
         t.border = False
@@ -90,7 +77,6 @@ class StudentList:
                 [self.studentList[z].firstname, self.studentList[z].lastname, self.studentList[z].tnumber, courses,
                  numbers, names, room, meetingtimes])
         print(t)
-
     def add_student_from_file(self, filename):
         file = open(filename, "r")
         for f in file:

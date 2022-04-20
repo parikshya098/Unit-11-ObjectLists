@@ -1,4 +1,4 @@
-from prettytable import PrettyTable\
+from prettytable import PrettyTable
 
 class Course:
     def __init__(self, department="", number="", name="", room="", meetingtimes=""):

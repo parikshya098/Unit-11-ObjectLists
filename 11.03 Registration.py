@@ -3,7 +3,7 @@ class Student():
       self.firstname = firstname
       self.lastname = lastname
       self.tnumber = tnumber
-      self.courses = []
+      self.courseList = []
 
 class StudentList():
     def __init__(self):
@@ -31,11 +31,11 @@ class StudentList():
 
 class Course():
     def __init__(self,department, number, name, room, meetingtimes):
-      self.department=department
-      self.number=number
-      self.name=name
-      self.room=room
-      self.meetingtimes=meetingtimes
+      self.department = department
+      self.number = number
+      self.name = name
+      self.room = room
+      self.meetingtimes = meetingtimes
 
 class CourseList():
     def __init__(self):

@@ -1,6 +1,3 @@
-from select import select
-from turtle import distance
-
 class Sketch:
     def __init__(self, size) -> None:
         self.size = size

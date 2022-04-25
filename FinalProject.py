@@ -3,10 +3,10 @@ class Sketch:
         self.size = size
         self.xpos = 0
         self.ypos = 0
-        self.direction = 'L'
+        self.direction = 'U'
         self.pen = 'U'
         self.canvas = [[' ' for x in range(size)]  for x in range(size)]
-    
+ 
     def printsketch(self):
         print('+' + '-'  * self.size + '+')
         for row in reversed(self.canvas):
@@ -16,13 +16,13 @@ class Sketch:
             print("|", end='')
             print()
         print('+' + '-'  * self.size + '+')
-
+ 
     def penup(self):
         self.pen = 'U'
-    
+ 
     def pendown(self):
         self.pen = 'D'
-    
+ 
     def turnleft(self):
         if self.direction == 'U':
             self.direction = 'L'
@@ -32,8 +32,7 @@ class Sketch:
             self.direction = 'R'
         elif self.direction == 'R':
             self.direction = 'U'
-    
-
+ 
     def turnright(self):
         if self.direction == 'U':
             self.direction = 'R'
@@ -43,27 +42,26 @@ class Sketch:
             self.direction = 'L'
         elif self.direction == 'L':
             self.direction = 'U'
-    
-        
+ 
     def move(self, distance):
         dx = 0
         dy = 0
         if self.direction == 'U':
-            dy = 1
-        elif self.direction == 'D':
-            dy = -1
-        elif self.direction == 'L':
-            dx = -1
-        elif self.direction == 'R':
             dx = 1
-        
+        elif self.direction == 'D':
+            dx = -1
+        elif self.direction == 'L':
+            dy = -1
+        elif self.direction == 'R':
+            dy = 1
+ 
         for step in range(distance):
             if self.pen == 'D':
                 self.canvas[self.xpos][self .ypos] = '*'
             self.xpos += dx
             self.ypos += dy
 def main():
-    file = open('Cshape.txt','r')
+    file = open('Cshape.txt', 'r')
     sketch = Sketch(20)
     while True:
         line = file.readline()
@@ -83,4 +81,6 @@ def main():
             sketch.turnleft()
         elif words[0] == 6:
             sketch.printsketch()
+    print('X = {}  Y = {}  Direction = {}'.format(sketch.xpos, sketch.ypos, sketch.direction))
+
 main()

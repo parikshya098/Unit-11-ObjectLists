@@ -8,11 +8,13 @@ class House:
         return self.price / self.sqft
 
     def payment(self, ar, ny):
-      return 100
+        r = ar / 12
+        n = ny * 12
+        return self.price * ((r * (1 + r) ** n)) / ((1 + r) ** n-1)
 
 HouseList = []
-n = open("ExamThreeHouses.txt", "r")
-for line in n:
+file = open("ExamThreeHouses.txt", "r")
+for line in file:
     data = line.split(', ')
     address = data[0]
     sqft = int(data[1])
@@ -22,7 +24,7 @@ for line in n:
 
 interest = int(input("Enter Interest Rate: "))
 interest = interest / 100
-years = int(input("Enter years for Mortgage: "))
-print("{0:<15}{1:<15}{2:<15}{3:<15}{4:<15}".format("Address", "Sq Ft", "SqFt Cost", "Price", "Payment")) 
+years = int(input("Enter years for Mortgage: ")) 
+print("\n{0:<15}{1:<15}{2:<15}{3:<15}{4:<15}".format("Address", "Sq Ft", "SqFt Cost", "Price", "Payment")) 
 for house in HouseList:
     print("{0:<15}{1:<15}{2:<15.2f}{3:<15.2f}{4:<15.2f}".format(house.address, house.sqft, house.costpersqft(), house.price, house.payment(interest, years)))

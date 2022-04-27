@@ -8,9 +8,9 @@ class House:
         return self.price / self.sqft
 
     def payment(self, ar, ny):
-        r = ar / 12
-        n = ny * 12
-        return self.price * ((r * (1 + r) ** n)) / ((1 + r) ** n-1)
+        rate = ar / 12
+        year = ny * 12
+        return self.price * ((rate * (1 + rate) ** year)) / ((1 + rate) ** year-1)
 
 HouseList = []
 file = open("Exam Three Houses.txt", "r")

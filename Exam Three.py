@@ -13,7 +13,7 @@ class House:
         return self.price * ((r * (1 + r) ** n)) / ((1 + r) ** n-1)
 
 HouseList = []
-file = open("ExamThreeHouses.txt", "r")
+file = open("Exam Three Houses.txt", "r")
 for line in file:
     data = line.split(', ')
     address = data[0]
